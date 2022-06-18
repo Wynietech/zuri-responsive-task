@@ -1,0 +1,148 @@
+body{
+  font-family: url(https://fonts.google.com/specimen/Poppins);
+  font-weight: 400,500,600,700;
+}
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url(desktop.jpg.png) no-repeat ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hero .container {
+  padding-top: 72px;
+}
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+#hero h2 {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+#hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@media (max-width: 991px) {
+  #hero {
+    height: 100vh;
+    text-align: center;
+  }
+  #hero .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+  #hero .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
+@media (max-width: 375px) {
+  #hero {
+    height: 100vh;
+    text-align: center;
+  }
+  #hero .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+.form-header{
+  margin: .5rem;
+  width: 100%;
+}
+.form-header .card{
+  background-color: hsl(248, 44%, 46%);
+  margin: .5rem;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 5px 5px 5px hsl(246, 16%, 12%);
+}
+.form-header .card p{
+  margin-left: 25%;
+  margin-right: 20%;
+  color: #fff;
+  font-size: 15px;
+}
+.form{
+  margin: .5rem;
+  width: 100%;
+}
+.form .card{
+  margin: .5rem;
+  border-radius: 10px;
+  width: 100%;
+}
+.form p{
+  font-size: 12px;
+}
+a{
+  color: hsl(0, 100%, 74%);
+}
+a:hover{
+  text-decoration: none;
+  color: #111;
+}
+.color-overlay{
+  width: 100%;
+  height: 100vh;
+  background:  hsl(0, 100%, 74%);
+  opacity: .6;
+  position: absolute;
+}
+.form-control:hover{
+  border: 1px solid hsl(249, 10%, 26%);
+}
