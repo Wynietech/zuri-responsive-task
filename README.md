@@ -1,1 +1,0 @@
-# zuri-responsive-task
